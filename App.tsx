@@ -116,7 +116,7 @@ const App: React.FC = () => {
             </a>
           ))}
         </div>
-        <div className="nav-el">
+        <div className="nav-el hidden md:block">
           <span className="px-5 py-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-3">
             <Activity size={12} className="animate-pulse" />
             V0.2.0 Calibrating
@@ -125,16 +125,16 @@ const App: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <header className="container mx-auto px-6 pt-48 pb-32 flex flex-col lg:flex-row items-center justify-between gap-16">
+      <header className="container  mx-auto md:px-12 px-6 pt-48 pb-32 flex flex-col lg:flex-row items-center justify-between gap-16">
         <div className="w-full lg:w-1/2 text-left space-y-8">
           <div className="fade-in inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-bold uppercase tracking-widest">
             <ShieldAlert size={14} className="text-emerald-500" />
             Under Protocol Maintenance
           </div>
 
-          <h1 className="max-w-4xl">
-            <span className="reveal-3d block text-6xl md:text-[8rem] font-black tracking-tighter leading-[0.85]">TRADING</span>
-            <span className="reveal-3d block text-6xl md:text-[8rem] font-black tracking-tighter text-gradient leading-[0.85]">INTELLIGENCE</span>
+          <h1 className="max-w-5xl ">
+            <span className="reveal-3d block text-6xl md:text-[7rem] font-black tracking-tighter leading-[0.85]">TRADING</span>
+            <span className="reveal-3d block text-6xl md:text-[7rem] font-black tracking-tighter text-gradient leading-[0.85]">INTELLIGENCE</span>
           </h1>
 
           <p className="fade-in text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed">
@@ -225,7 +225,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Feature Grid with 3D Interaction */}
-      <section className="container mx-auto px-6 py-40">
+      <section className="container mx-auto px-6 md:px-20 py-40">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20 text-left">
           <FeatureItem 
             icon={<BarChart3 size={40} className="text-emerald-400" />}
@@ -264,7 +264,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      <footer className="pt-32 pb-64 border-t border-white/5 bg-black/40">
+      {/* <footer className="pt-32 border-t border-white/5 bg-black/40">
         <div className="container mx-auto px-10 flex flex-col md:flex-row justify-between items-start gap-20">
           <div className="text-left space-y-4">
             <div className="text-4xl font-black italic uppercase tracking-tighter">Edufintra</div>
@@ -291,7 +291,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-10 mt-32 pt-10 border-t border-white/5 text-[9px] font-black tracking-[0.6em] uppercase text-gray-800 text-center md:text-left">
           © 2024 EDUFINTRA LABS. ALL NEURAL LINKS SECURED. SYSTEM NOMINAL.
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
